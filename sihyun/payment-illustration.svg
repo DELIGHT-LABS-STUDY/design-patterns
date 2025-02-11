@@ -1,0 +1,73 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- 유저/상점 -->
+    <g transform="translate(50, 150)">
+        <circle cx="30" cy="30" r="20" fill="#FFB74D"/>
+        <text x="30" y="70" text-anchor="middle" font-size="14">사용자</text>
+    </g>
+
+    <!-- 결제 앱 -->
+    <g transform="translate(150, 130)">
+        <rect x="0" y="0" width="120" height="200" rx="10" fill="#FFFFFF" stroke="#666666" stroke-width="2"/>
+        <text x="60" y="30" text-anchor="middle" font-size="14">결제 앱</text>
+        
+        <!-- 네이버페이 버튼 -->
+        <rect x="10" y="50" width="100" height="40" rx="5" fill="#03C75A"/>
+        <text x="60" y="75" text-anchor="middle" font-size="14" fill="white">네이버페이</text>
+        
+        <!-- 카카오페이 버튼 -->
+        <rect x="10" y="100" width="100" height="40" rx="5" fill="#FFE812"/>
+        <text x="60" y="125" text-anchor="middle" font-size="14" fill="black">카카오페이</text>
+    </g>
+
+    <!-- 어댑터 -->
+    <g transform="translate(350, 130)">
+        <rect x="0" y="0" width="150" height="200" rx="10" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+        <text x="75" y="30" text-anchor="middle" font-size="14">결제 어댑터</text>
+        
+        <!-- 네이버페이 어댑터 -->
+        <rect x="10" y="50" width="130" height="40" rx="5" fill="#FFFFFF" stroke="#03C75A" stroke-width="2"/>
+        <text x="75" y="75" text-anchor="middle" font-size="12">네이버페이 어댑터</text>
+        
+        <!-- 카카오페이 어댑터 -->
+        <rect x="10" y="100" width="130" height="40" rx="5" fill="#FFFFFF" stroke="#FFE812" stroke-width="2"/>
+        <text x="75" y="125" text-anchor="middle" font-size="12">카카오페이 어댑터</text>
+    </g>
+
+    <!-- 각 결제 시스템 -->
+    <g transform="translate(580, 130)">
+        <rect x="0" y="0" width="150" height="200" rx="10" fill="#FFFFFF" stroke="#666666" stroke-width="2"/>
+        <text x="75" y="30" text-anchor="middle" font-size="14">결제 시스템</text>
+        
+        <!-- 네이버페이 시스템 -->
+        <rect x="10" y="50" width="130" height="40" rx="5" fill="#03C75A"/>
+        <text x="75" y="75" text-anchor="middle" font-size="12" fill="white">네이버페이 시스템</text>
+        
+        <!-- 카카오페이 시스템 -->
+        <rect x="10" y="100" width="130" height="40" rx="5" fill="#FFE812"/>
+        <text x="75" y="125" text-anchor="middle" font-size="12">카카오페이 시스템</text>
+    </g>
+
+    <!-- 연결선 -->
+    <g stroke="#666" stroke-width="2" fill="none">
+        <!-- 사용자 -> 결제 앱 -->
+        <path d="M 100,180 L 150,180"/>
+        <!-- 결제 앱 -> 어댑터 -->
+        <path d="M 270,180 L 350,180"/>
+        <!-- 어댑터 -> 결제 시스템 -->
+        <path d="M 500,180 L 580,180"/>
+    </g>
+
+    <!-- 화살표 -->
+    <g fill="#666">
+        <polygon points="145,175 150,180 145,185"/>
+        <polygon points="345,175 350,180 345,185"/>
+        <polygon points="575,175 580,180 575,185"/>
+    </g>
+
+    <!-- 설명 -->
+    <g transform="translate(50, 350)">
+        <text x="0" y="0" font-size="12">1. 사용자가 결제 방식 선택</text>
+        <text x="250" y="0" font-size="12">2. 어댑터가 각 결제 시스템에 맞게 변환</text>
+        <text x="500" y="0" font-size="12">3. 각 결제 시스템에서 처리</text>
+    </g>
+</svg>
